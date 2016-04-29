@@ -51,9 +51,9 @@ public class Game
 								{
 									int attack=(int)(Math.random()*6);
 									attack=attack*strength;
-									hp=hp-attack;
+									hp=hp-attack; //our hp
 									atc=(int)(Math.random()*10);
-									health=health-(st*atc);
+									health=health-(st*atc); //enemy hp
 									System.out.println("He deals ["+attack+"] damage to you, while you deal ["+atc+"] damage to the monster!");
 									if(i>9)
 										{
@@ -180,5 +180,6 @@ public class Game
 							System.out.println(g.getHealth());
 						}
 				}
+			
 		}
 	}
